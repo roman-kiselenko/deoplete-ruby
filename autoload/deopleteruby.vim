@@ -14,14 +14,10 @@ endfunction
 function! deopleteruby#build_cache()
   let core_lib = readfile(globpath(&rtp, 'autoload/deoplete-ruby/sources/core_methods'))
 
-  let words_cache = []
   for meth in core_lib
     let cache = {}
     let cache.word = split(meth)[0]
-    if len(split(meth)) > 1
-      let cache.kind = split(meth)[1]
-    endif
-    call add(words_cache, cache)
+    let cache.kind = split(meth)[1]
+    call add(g:deopleteruby#words_cache, cache)
   endfor
-  let g:deopleteruby#words_cache = words_cache
 endfunction

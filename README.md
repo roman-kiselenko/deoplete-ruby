@@ -1,6 +1,6 @@
 ## Deoplete-Ruby Completion ##
 Just a source for [Deoplete](https://github.com/Shougo/deoplete.nvim)
-provide core Ruby methods
+provide the core Ruby methods, super simple and use a text file as source
 
 This is the working version.
 

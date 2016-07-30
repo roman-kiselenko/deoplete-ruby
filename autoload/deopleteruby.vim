@@ -1,30 +1,27 @@
+let g:deopleteruby#words_cache = []
+
 function! deopleteruby#gather_candidates(input, position, filetype)
-  if !exists("g:deopleteruby#words_cache")
-    call deopleteruby#build_cache(a:filetype)
+  if !len(g:deopleteruby#words_cache)
     " echohl ErrorMsg | echomsg 'no cache' | echohl None
+    call deopleteruby#build_cache()
     return g:deopleteruby#words_cache
   else
-    " echohl ErrorMsg | echomsg 'from cache' | echohl None
+    " echohl ErrorMsg | echomsg 'cache' | echohl None
     return g:deopleteruby#words_cache
   endif
 endfunction
 
-function! deopleteruby#build_cache(filetype)
-  if a:filetype == 'ruby'
-    let main_dict = readfile(globpath(&rtp,
-                             \ 'autoload/deoplete-ruby/sources/main.dict'))
-    let string_dict = readfile(globpath(&rtp,
-                             \ 'autoload/deoplete-ruby/sources/string.dict'))
+function! deopleteruby#build_cache()
+  let core_lib = readfile(globpath(&rtp, 'autoload/deoplete-ruby/sources/core_methods'))
 
-    let words_cache = []
-    for meth in string_dict
-      let cache = {}
-      let cache.word = split(meth)[0]
+  let words_cache = []
+  for meth in core_lib
+    let cache = {}
+    let cache.word = split(meth)[0]
+    if len(split(meth)) > 1
       let cache.kind = split(meth)[1]
-      call add(words_cache, cache)
-    endfor
-    let g:deopleteruby#words_cache = words_cache
-  else
-    return
-  endif
+    endif
+    call add(words_cache, cache)
+  endfor
+  let g:deopleteruby#words_cache = words_cache
 endfunction

@@ -7,11 +7,14 @@ class Source(Base):
         self.name = 'ruby'
         self.mark = '[rb]'
         self.filetypes = ['ruby']
-        self.input_pattern = r'\.\w*'
+        self.input_pattern = r'\W*'
+        # self.debug_enabled = True
+        self.rank = 500
 
     def on_event(self, context):
-        self.vim.call('deopleteruby#build_cache', context['filetype'])
-        return
+        if context['filetype'] == 'ruby' and context['event'] == 'BufWinEnter':
+            self.vim.call('deopleteruby#build_cache')
+            return
 
     def gather_candidates(self, context):
         return self.vim.call('deopleteruby#gather_candidates', context['input'], context['complete_position'], context['filetype'])

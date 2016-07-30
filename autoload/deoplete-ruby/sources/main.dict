@@ -1,0 +1,245 @@
+!	BasicObject#!
+!=	BasicObject#!=
+!~	Kernel#!~
+<=>	Kernel#<=>
+==	BasicObject#==
+===	Kernel#===
+=~	Kernel#=~
+ARGF
+ARGV
+ArgumentError
+Array
+Array	Kernel#Array
+BasicObject
+Bignum
+Binding
+CROSS_COMPILING
+Class
+Comparable
+Complex
+Complex	Kernel#Complex
+ConditionVariable
+Data
+Dir
+ENV
+EOFError
+Encoding
+EncodingError
+Enumerable
+Enumerator
+Errno
+Exception
+FALSE
+FalseClass
+Fiber
+FiberError
+File
+FileTest
+Fixnum
+Float
+Float	Kernel#Float
+FloatDomainError
+GC
+Gem
+Hash
+Hash	Kernel#Hash
+IO
+IOError
+IndexError
+Integer
+Integer	Kernel#Integer
+Interrupt
+Kernel
+KeyError
+LoadError
+LocalJumpError
+Marshal
+MatchData
+Math
+Method
+Module
+Monitor
+MonitorMixin
+Mutex
+NIL
+NameError
+NilClass
+NoMemoryError
+NoMethodError
+NotImplementedError
+Numeric
+Object
+ObjectSpace
+Proc
+Process
+Queue
+RUBYGEMS_ACTIVATION_MONITOR
+RUBY_COPYRIGHT
+RUBY_DESCRIPTION
+RUBY_ENGINE
+RUBY_PATCHLEVEL
+RUBY_PLATFORM
+RUBY_RELEASE_DATE
+RUBY_REVISION
+RUBY_VERSION
+Random
+Range
+RangeError
+Rational
+Rational	Kernel#Rational
+RbConfig
+Regexp
+RegexpError
+RubyVM
+RuntimeError
+STDERR
+STDIN
+STDOUT
+ScriptError
+SecurityError
+Signal
+SignalException
+SizedQueue
+StandardError
+StopIteration
+String
+String	Kernel#String
+Struct
+Symbol
+SyntaxError
+SystemCallError
+SystemExit
+SystemStackError
+TOPLEVEL_BINDING
+TRUE
+Thread
+ThreadError
+ThreadGroup
+Time
+TracePoint
+TrueClass
+TypeError
+UnboundMethod
+UncaughtThrowError
+ZeroDivisionError
+__callee__	Kernel#__callee__
+__dir__	Kernel#__dir__
+__id__	BasicObject#__id__
+__method__	Kernel#__method__
+__send__	BasicObject#__send__
+_xmp_1469834943_13872_651662
+_xmp_1469834943_13872_651662_recv
+`	Kernel#`
+abort	Kernel#abort
+at_exit	Kernel#at_exit
+autoload	Kernel#autoload
+autoload?	Kernel#autoload?
+binding	Kernel#binding
+block_given?	Kernel#block_given?
+caller	Kernel#caller
+caller_locations	Kernel#caller_locations
+catch	Kernel#catch
+class	Kernel#class
+clone	Kernel#clone
+define_method	main.define_method
+define_singleton_method	Kernel#define_singleton_method
+display	Kernel#display
+dup	Kernel#dup
+enum_for	Kernel#enum_for
+eql?	Kernel#eql?
+equal?	BasicObject#equal?
+eval	Kernel#eval
+exec	Kernel#exec
+exit	Kernel#exit
+exit!	Kernel#exit!
+extend	Kernel#extend
+fail	Kernel#fail
+fork	Kernel#fork
+format	Kernel#format
+freeze	Kernel#freeze
+frozen?	Kernel#frozen?
+gem	Kernel#gem
+gem_original_require	Kernel#gem_original_require(require)
+gets	Kernel#gets
+global_variables	Kernel#global_variables
+hash	Kernel#hash
+include	main.include
+initialize	BasicObject#initialize
+initialize_clone	Kernel#initialize_clone
+initialize_copy	Kernel#initialize_copy
+initialize_dup	Kernel#initialize_dup
+inspect	to_s
+instance_eval	BasicObject#instance_eval
+instance_exec	BasicObject#instance_exec
+instance_of?	Kernel#instance_of?
+instance_variable_defined?	Kernel#instance_variable_defined?
+instance_variable_get	Kernel#instance_variable_get
+instance_variable_set	Kernel#instance_variable_set
+instance_variables	Kernel#instance_variables
+is_a?	Kernel#is_a?
+iterator?	Kernel#iterator?
+itself	Kernel#itself
+kind_of?	Kernel#kind_of?
+lambda	Kernel#lambda
+load	Kernel#load
+local_variables	Kernel#local_variables
+loop	Kernel#loop
+method	Kernel#method
+method_missing	BasicObject#method_missing
+methods	Kernel#methods
+nil?	Kernel#nil?
+object_id	Kernel#object_id
+open	Kernel#open
+p	Kernel#p
+print	Kernel#print
+printf	Kernel#printf
+private	main.private
+private_methods	Kernel#private_methods
+proc	Kernel#proc
+protected_methods	Kernel#protected_methods
+public	main.public
+public_method	Kernel#public_method
+public_methods	Kernel#public_methods
+public_send	Kernel#public_send
+putc	Kernel#putc
+puts	Kernel#puts
+raise	Kernel#raise
+rand	Kernel#rand
+readline	Kernel#readline
+readlines	Kernel#readlines
+remove_instance_variable	Kernel#remove_instance_variable
+require	Kernel#require
+require_relative	Kernel#require_relative
+respond_to?	Kernel#respond_to?
+respond_to_missing?	Kernel#respond_to_missing?
+select	Kernel#select
+send	Kernel#send
+set_trace_func	Kernel#set_trace_func
+singleton_class	Kernel#singleton_class
+singleton_method	Kernel#singleton_method
+singleton_method_added	BasicObject#singleton_method_added
+singleton_method_removed	BasicObject#singleton_method_removed
+singleton_method_undefined	BasicObject#singleton_method_undefined
+singleton_methods	Kernel#singleton_methods
+sleep	Kernel#sleep
+spawn	Kernel#spawn
+sprintf	Kernel#sprintf
+srand	Kernel#srand
+syscall	Kernel#syscall
+system	Kernel#system
+taint	Kernel#taint
+tainted?	Kernel#tainted?
+tap	Kernel#tap
+test	Kernel#test
+throw	Kernel#throw
+to_enum	Kernel#to_enum
+to_s	main.to_s
+trace_var	Kernel#trace_var
+trap	Kernel#trap
+trust	Kernel#trust
+untaint	Kernel#untaint
+untrace_var	Kernel#untrace_var
+untrust	Kernel#untrust
+untrusted?	Kernel#untrusted?
+using	main.using
+warn	Kernel#warn

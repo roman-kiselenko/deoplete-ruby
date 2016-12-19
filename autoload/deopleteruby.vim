@@ -14,6 +14,7 @@ endfunction
 function! deopleteruby#build_cache()
   let source_files = [
         \ 'autoload/deoplete-ruby/sources/core_methods',
+        \ 'autoload/deoplete-ruby/sources/keywords',
         \ ]
 
   for source_file in source_files

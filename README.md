@@ -9,7 +9,7 @@ This is the working version.
 NVIM 0.1.4 (not tested on VIM!)
 ```
 
-###### Because neovim does not support ruby (if_ruby) :cry:. 
+Here is [deoplete with rcodetools](https://github.com/Shougo/deoplete-rct)
 
 ## Getting started
 

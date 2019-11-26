@@ -18,7 +18,7 @@ function! deopleteruby#build_cache()
         \ ]
 
   for source_file in source_files
-    let meths = readfile(globpath(&rtp, source_file))
+    let meths = readfile(globpath(&rtp, source_file, 0, 1)[0])
 
     for meth in meths
       let cache = {}
